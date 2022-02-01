@@ -1,3 +1,4 @@
+//Tony Hayden
 eventButton = function(event) {
     var text=$('textarea#notes').val();
                     var comp="vegan"
