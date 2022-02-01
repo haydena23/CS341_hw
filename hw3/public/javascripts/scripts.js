@@ -24,7 +24,4 @@ $(document).ready(function() {
     $(function() {
         $("button").click(eventButton);
     });
-    $(function() {
-        $('dropdown').each()
-    });
 });
