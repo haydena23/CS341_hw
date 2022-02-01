@@ -1,0 +1,77 @@
+/* Tony Hayden */
+/* 1/31/22 */
+/* Homework 3 */
+
+/* Adds corgi butt to adjusted textarea box */
+textarea {
+    background-image: url("https://i.kym-cdn.com/photos/images/newsfeed/001/931/534/322.gif");
+    width: 500px;
+    height: 500px;
+}
+/* Makes the table aqua blue */
+table {
+    background-color: aqua;
+}
+/* Font changes */
+h1 {
+    font: small-caps bold 24px/1 sans-serif;
+}
+ul {
+    font: italic 1.2em "Fira Sans", serif;
+}
+
+/* Adds Leo to the background of the webpage */
+body {
+    background-image: url("https://www.indiewire.com/wp-content/uploads/2016/08/20140216-131646.jpg");
+    width: 1920px;
+    height: 1080px;
+    object-fit: fill;
+    color: white;
+}
+
+ /* All of the following code was found on w3schools found here: https://www.w3schools.com/howto/howto_css_dropdown.asp */
+ /* Dropdown Button */
+ .dropbtn {
+    background-color: #ff0000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+      display: block;
+      max-height: 150px;
+      overflow: auto;
+    }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #666666;} 

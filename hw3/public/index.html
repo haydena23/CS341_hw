@@ -1,0 +1,99 @@
+<!--Tony Hayden-->
+<!--1/31/22-->
+<!--Homework 3-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <!--Adds reference to the CSS sheet-->
+    <head>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        </script>
+        <script
+            src="javascripts/scripts.js">
+        </script>
+        <link rel="stylesheet" href="stylesheets\hw3.css">
+        <script>
+                // NEED TO FIX THIS BROKEN CODE
+                //The following code was found here: https://stackoverflow.com/questions/13437446/how-to-display-selected-item-in-bootstrap-button-dropdown-title
+                $('.dropdown').each(function(key, dropdown) {
+                    var $dropdown = $(dropdown);
+                    $dropdown.find('.dropdown-content a').on('click', function() {
+                        $dropdown.find("#dropbutton").text($(this).text()).append('');
+                    });
+                });
+        </script>
+    </head>
+    <body>
+        <h1>Cheesecake Order Form</h1>
+        <!--Adds the cheesecake image-->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="Cheesecake Failed to Show" width="150" height="150"><br>
+        <!--Using a form to establish -->
+        <form id="form1">
+            <!--2 row, 2 column table to allign the radio buttons and dropdown with the words "Quanity" and "Topping"-->
+            <table>
+                <tr>
+                    <td>Quanity</td>
+                    <td>Topping</td>
+                </tr>
+                <tr>
+                    <td>
+                        <!--Dropdown menu-->
+                        <select id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        </select><br>
+                    </td>
+                    <td>
+                        <!--Radio buttons-->
+                        <input type="radio" id="plain" name="flavor" value="Plain">
+                        <label for="plain">Plain</label><br>
+                        <input type="radio" id="cherry" name="flavor" value="Cherry">
+                        <label for="cherry">Cherry</label><br>
+                        <input type="radio" id="chocolate" name="flavor" value="Chocolate">
+                        <label for="chocolate">Chocolate</label><br>
+                    </td>
+                </tr>
+            </table>
+            <!--This is the notes box-->
+            <label for="notes">Notes:</label><br>
+            <textarea id="notes" name="notes" rows="5" cols="50" placeholder="Enter any special instructions here."></textarea><br><br>
+            <!--Submit button-->
+            <button type="submit" form="form1" value="Order" name="button">Order</button><br>
+        </form>
+        <div class="dropdown">
+            <h3>
+                <span>Orders For</span>
+                <!--Creates a dropdown button to display the different months-->
+                <button class="dropbtn" id="dropbutton">Jan</button>
+                <div class="dropdown-content">
+                    <a href="#">Jan</a>   
+                    <a href="#">Feb</a>    
+                    <a href="#">Mar</a>    
+                    <a href="#">Apr</a>    
+                    <a href="#">May</a>    
+                    <a href="#">Jun</a>    
+                    <a href="#">Jul</a>    
+                    <a href="#">Aug</a>    
+                    <a href="#">Sep</a>    
+                    <a href="#">Oct</a>    
+                    <a href="#">Nov</a>    
+                    <a href="#">Dec</a>                     
+                </div>
+            </h3>
+        </div>
+        <!--Unordered list-->
+        <ul>
+            <li>11 cherry</li>
+            <li>17 chocolate</li>
+            <li>31 plain</li>
+        </ul>
+    </body>
+</html>
