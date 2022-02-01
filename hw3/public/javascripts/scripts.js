@@ -14,13 +14,6 @@ eventButton = function(event) {
                     }
 }
 
-eventDropdown = function(event) {
-    var $dropdown = $(dropdown);
-    $dropdown.find('.dropdown-content a').on('click', function() {
-        $dropdown.find("#dropbutton").text($(this).text()).append('');
-    });
-}
-
 $(document).ready(function() {
     $(function() {
         $("button").click(eventButton);
